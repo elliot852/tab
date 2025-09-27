@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu com Bordas Arredondadas</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .background {
-            width: 100vw; 
-            height: 100vh; 
-            background-image: url('tab.png'); 
-            background-size: cover;
-            background-position: center;
-            border-radius: 30px;
-            overflow: hidden; 
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>ImgMenu</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;   /* 🔑 Nenhum fundo */
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;          /* Ajuste opcional */
+    }
+  </style>
 </head>
 <body>
-    <div class="tab"></div>
+  <img src="tab.png" alt="Menu Interface">
 </body>
 </html>
