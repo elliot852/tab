@@ -7,17 +7,20 @@
     html, body {
       margin: 0;
       padding: 0;
-      background: transparent;   /* 🔑 Nenhum fundo */
+      background: transparent;
       font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+      /* remove o flex que centraliza */
       height: 100vh;
     }
+
+    /* coloca a imagem no canto que você quiser */
     img {
+      position: absolute;
+      top: 20px;      /* distância do topo */
+      left: 20px;     /* distância da esquerda */
       max-width: 100%;
-      max-height: 100%;
-      object-fit: cover;          /* Ajuste opcional */
+      height: auto;
     }
   </style>
 </head>
